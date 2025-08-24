@@ -1,69 +1,80 @@
-<!-- full.html: Gabungan materi HTML dasar -->
+<!-- full.html (ubah kecil pada body) -->
 <!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <title>Landing Mini</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header & Navigasi -->
-    <header>
-      <h1>Halo Dunia!</h1>
-      <h2>Belajar HTML Dasar</h2>
-      <nav>
-        <a href="#media">Media</a> | <a href="#list">List & Tabel</a> |
-        <a href="#kontak">Kontak</a>
-      </nav>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Halo Dunia!</h1>
+        <p class="subtitle">Belajar HTML Dasar</p>
+        <nav>
+          <a href="#media">Media</a>
+          <a href="#list">List & Tabel</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </header>
 
-    <!-- Media -->
-    <main>
-      <section id="media">
-        <h2>Media</h2>
-        <p>
-          Kunjungi
-          <a href="https://tokokopi.com" target="_blank" rel="noopener"
-            >toko online</a
-          >
-          kami.
-        </p>
-        <img
-          src="./assets/arabica.jpg"
-          alt="Kopi Arabika dalam cangkir"
-          width="260"
-        />
-      </section>
+      <main>
+        <section id="media" class="card">
+          <h2>Media</h2>
+          <p>
+            Kunjungi
+            <a href="https://tokokopi.com" target="_blank" rel="noopener"
+              >toko online</a
+            >
+            kami.
+          </p>
+          <img
+            src="./assets/gambar1.jpg"
+            alt="Kopi Arabika dalam cangkir"
+            width="320"
+          />
+        </section>
 
-      <!-- List & Tabel -->
-      <section id="list">
-        <h2>List & Tabel</h2>
-        <ul>
-          <li>Teks 1</li>
-          <li>Teks 2</li>
-        </ul>
-        <table border="1">
-          <tr>
-            <th>Kolom 1</th>
-            <th>Kolom 2</th>
-          </tr>
-          <tr>
-            <td>Teks 1</td>
-            <td>Teks 2</td>
-          </tr>
-        </table>
-      </section>
+        <section id="list" class="card">
+          <h2>List & Tabel</h2>
+          <ul>
+            <li>Teks 1</li>
+            <li>Teks 2</li>
+          </ul>
 
-      <!-- Form -->
-      <section id="kontak">
-        <h2>Kontak</h2>
-        <form>
-          <label>Nama: <input type="text" /></label><br />
-          <label>Email: <input type="email" /></label><br />
-          <button type="submit">Kirim</button>
-        </form>
-      </section>
-    </main>
+          <table>
+            <thead>
+              <tr>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Teks 1</td>
+                <td>Teks 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-    <footer>© 2025 CodeWithYaas</footer>
+        <section id="kontak" class="card">
+          <h2>Kontak</h2>
+          <form>
+            <label
+              >Nama
+              <input type="text" placeholder="Tuliskan nama kamu" />
+            </label>
+            <label
+              >Email
+              <input type="email" placeholder="nama@email.com" />
+            </label>
+            <button type="submit" class="btn">Kirim</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>© 2025 CodeWithYaas</footer>
+    </div>
   </body>
 </html>

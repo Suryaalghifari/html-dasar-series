@@ -1,0 +1,155 @@
+/* Reset ringan */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #0f172a;
+  background: #f6f8fb;
+}
+
+/* Layout utama */
+.container {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+h1 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #2563eb;
+}
+.subtitle {
+  margin: 6px 0 14px;
+  color: #64748b;
+}
+
+nav {
+  display: inline-flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+nav a:hover {
+  background: #eaf1ff;
+}
+
+/* Kartu/section */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 18px 0;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: #111827;
+}
+.card p {
+  margin: 8px 0 12px;
+  color: #334155;
+}
+.card img {
+  display: block;
+  border-radius: 12px;
+  margin-top: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* List */
+ul {
+  margin: 8px 0 14px 18px;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+thead th {
+  background: #f1f5f9;
+}
+th,
+td {
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: grid;
+  gap: 12px;
+  max-width: 420px;
+}
+label {
+  font-weight: 600;
+  color: #0f172a;
+  display: grid;
+  gap: 6px;
+}
+input {
+  padding: 10px 12px;
+  border: 1px solid #d0d7e2;
+  border-radius: 10px;
+  background: #fff;
+  outline: none;
+}
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
+}
+
+.btn {
+  align-self: start;
+  background: #2563eb;
+  color: #fff;
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.btn:hover {
+  background: #1e40af;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #64748b;
+  margin: 26px 0 6px;
+  font-size: 14px;
+}
+
+/* Responsif */
+@media (max-width: 560px) {
+  h1 {
+    font-size: 30px;
+  }
+  .container {
+    margin: 24px auto;
+  }
+}
